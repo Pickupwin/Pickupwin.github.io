@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="摘要求 $x^a=b\mod (2k+1)$ 的解数 第一步显然是将 $2k+1$ 质因数分解">
-<meta name="keywords" content=".BZOJ,同余方程">
+  <meta name="description" content="摘要合并相邻两数的代价是 $max(a_i,a_{i+1})$ ； 考虑一个数做几次贡献。">
+<meta name="keywords" content=".洛谷,max">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BZOJ 2219 -- 数论之神">
-<meta property="og:url" content="http://yoursite.com/2019/05/09/BZOJ-2219/index.html">
+<meta property="og:title" content="洛谷 4393 序列问题">
+<meta property="og:url" content="http://yoursite.com/2021/10/06/LG-4393/index.html">
 <meta property="og:site_name" content="Pickupwin">
-<meta property="og:description" content="摘要求 $x^a=b\mod (2k+1)$ 的解数 第一步显然是将 $2k+1$ 质因数分解">
+<meta property="og:description" content="摘要合并相邻两数的代价是 $max(a_i,a_{i+1})$ ； 考虑一个数做几次贡献。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-17T09:23:36.000Z">
+<meta property="og:updated_time" content="2021-10-06T08:14:59.551Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="BZOJ 2219 -- 数论之神">
-<meta name="twitter:description" content="摘要求 $x^a=b\mod (2k+1)$ 的解数 第一步显然是将 $2k+1$ 质因数分解">
+<meta name="twitter:title" content="洛谷 4393 序列问题">
+<meta name="twitter:description" content="摘要合并相邻两数的代价是 $max(a_i,a_{i+1})$ ； 考虑一个数做几次贡献。">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/09/BZOJ-2219/">
+  <link rel="canonical" href="http://yoursite.com/2021/10/06/LG-4393/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>BZOJ 2219 -- 数论之神 | Pickupwin</title>
+  <title>洛谷 4393 序列问题 | Pickupwin</title>
   
 
 
@@ -358,7 +358,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/BZOJ-2219/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/10/06/LG-4393/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bowen Su">
@@ -375,7 +375,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">BZOJ 2219 -- 数论之神
+          <h1 class="post-title" itemprop="name headline">洛谷 4393 序列问题
 
               
             
@@ -401,24 +401,12 @@
                 
               
 
-              <time title="创建时间：2019-05-09 19:38:30" itemprop="dateCreated datePublished" datetime="2019-05-09T19:38:30+08:00">2019-05-09</time>
+              <time title="创建时间：2021-10-06 16:03:50 / 修改时间：16:14:59" itemprop="dateCreated datePublished" datetime="2021-10-06T16:03:50+08:00">2021-10-06</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-17 17:23:36" itemprop="dateModified" datetime="2019-06-17T17:23:36+08:00">2019-06-17</time>
               
             
           </span>
@@ -435,7 +423,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数论/" itemprop="url" rel="index"><span itemprop="name">数论</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/贪心/" itemprop="url" rel="index"><span itemprop="name">贪心</span></a></span>
 
                 
                 
@@ -454,8 +442,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/05/09/BZOJ-2219/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/09/BZOJ-2219/" itemprop="commentCount"></span>
+                <a href="/2021/10/06/LG-4393/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/06/LG-4393/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -483,28 +471,19 @@
       
 
       
-        <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>求 $x^a=b\mod (2k+1)$ 的解数</p>
-<p>第一步显然是将 $2k+1$ 质因数分解</p>
+        <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>合并相邻两数的代价是 $max(a_i,a_{i+1})$ ；</p>
+<p>考虑一个数做几次贡献。</p>
 <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=2219" target="_blank" rel="noopener">题面</a></h3><h3 id="解"><a href="#解" class="headerlink" title="解"></a>解</h3><p>$$<br>2k+1=\prod p_i^{c_i}<br>$$</p>
-<p>答案即为各方程 $x^a=b\mod p_i^{c_i}$ 的解数的积</p>
-<p>分类讨论</p>
-<p>最简单的是 $p^c|b$ 这意味着 $p^t|x^a$</p>
-<p>其中 $t$ 为 ${\left \lfloor \frac {c-1}{a} \right \rfloor+1}$</p>
-<p>解数即为 $p^{c-t}$</p>
-<p>之后考虑 $\gcd (p^c, b)=1​$</p>
-<p>求原根之后变成 $ax=b\mod m$</p>
-<p>其中 $m=\varphi (p^c)$</p>
-<p>最后是 $\gcd (p^c, b)&gt;1$</p>
-<p>记 $b=p^t\ast d$, $d\perp p$</p>
-<p>易知 $a|t​$</p>
-<p>之后扣掉 $p^t​$ ，记 $y=\frac {x}{p^{t/a}}​$</p>
-<p>$y^a=d\mod p^{c-t}$</p>
-<p>注意解出来个数还要乘 $p^{t-t/a}$</p>
-<p>(拓模的范围，之后扣掉 $p|y$ )</p>
-<p>(有趣的是 $y$ 解出来自然不是 $p$ 的倍数)</p>
-<p>Pickupwin: 听说保证有解……</p>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Test;</span><br><span class="line"><span class="keyword">int</span> A, B, K;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Pri[<span class="number">33</span>], Tim[<span class="number">33</span>], Val[<span class="number">33</span>], Cnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">gcd</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> b==<span class="number">0</span>?a:gcd(b, a%b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">count</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(n%p==<span class="number">0</span>)	&#123;n/=p;++ret;&#125;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> p, <span class="keyword">int</span> c)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ret=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;c;++i)	ret*=p;</span><br><span class="line">	<span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Split</span><span class="params">(<span class="keyword">int</span> v)</span></span>&#123;</span><br><span class="line">	Cnt=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">2</span>, c;<span class="number">1L</span>L*i*i&lt;=(<span class="keyword">long</span> <span class="keyword">long</span>)(v);++i)&#123;</span><br><span class="line">		c=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(v%i==<span class="number">0</span>)	&#123;v/=i;++c;&#125;</span><br><span class="line">		<span class="keyword">if</span>(c)&#123;</span><br><span class="line">			++Cnt;</span><br><span class="line">			Pri[Cnt]=i;</span><br><span class="line">			Tim[Cnt]=c;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span>(v&gt;<span class="number">1</span>)&#123;</span><br><span class="line">		++Cnt;</span><br><span class="line">		Pri[Cnt]=v;</span><br><span class="line">		Tim[Cnt]=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=Cnt;++i)&#123;</span><br><span class="line">		Val[i]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;Tim[i];++j)	Val[i]*=Pri[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Phi</span><span class="params">(<span class="keyword">int</span> v, <span class="keyword">int</span> p)</span></span>&#123;</span><br><span class="line">	<span class="keyword">if</span>(v%p==<span class="number">0</span>)	&#123;v/=p;v*=(p<span class="number">-1</span>);&#125;</span><br><span class="line">	<span class="keyword">return</span> v;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;Test);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(Test--)&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>, &amp;A, &amp;B, &amp;K);</span><br><span class="line">		</span><br><span class="line">		Split((K&lt;&lt;<span class="number">1</span>)|<span class="number">1</span>);</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">int</span> Ans=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=Cnt;++i)&#123;</span><br><span class="line">			<span class="keyword">if</span>(gcd(Val[i], B)==<span class="number">1</span>)	Ans*=gcd(A, Phi(Val[i], Pri[i]));</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(B%Val[i]==<span class="number">0</span>)	Ans*=<span class="built_in">pow</span>(Pri[i], Tim[i]-((Tim[i]<span class="number">-1</span>)/A+<span class="number">1</span>));</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				<span class="keyword">int</span> t=count(gcd(Val[i], B), Pri[i]);</span><br><span class="line">				Ans*=gcd(A, Phi(<span class="built_in">pow</span>(Pri[i], Tim[i]-t), Pri[i]))*<span class="built_in">pow</span>(Pri[i], t-t/A);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, Ans);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>题面摘要：相邻合并，最小化代价</p>
+<p>题解摘要：分离贡献，贪心</p>
+<hr>
+<p>[BOI2007] Sequence 序列问题</p>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.com.cn/problem/P4393" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>贪心</p>
+<p>考虑一个区间中max的贡献，它在区间端点则最少贡献一次，否则最少两次。除去这个max，剩下的区间是子问题。</p>
+<p>这给出了一个解的下界，也给出了达到下界的方案。</p>
+<p>解的值等于相邻两数max之和。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//https://www.luogu.com.cn/problem/P4393</span></span><br><span class="line"><span class="comment">//2021-07-10 AliCCC</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::max;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">1000111</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N;</span><br><span class="line"><span class="keyword">int</span> A[MAXN];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;N);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=N;++i)	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;A[i]);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">long</span> <span class="keyword">long</span> Ans=<span class="number">0L</span>L;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;N;++i)&#123;</span><br><span class="line">		Ans+=max(A[i], A[i+<span class="number">1</span>]);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, Ans);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -528,9 +507,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/BZOJ/" rel="tag"># .BZOJ</a>
+            <a href="/tags/洛谷/" rel="tag"># .洛谷</a>
           
-            <a href="/tags/同余方程/" rel="tag"># 同余方程</a>
+            <a href="/tags/max/" rel="tag"># max</a>
           
         </div>
       
@@ -543,8 +522,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/25/USACO-2019-JAN-Platinum-3/" rel="next" title="USACO 2019 JAN Platinum 3 -- Train Tracking 2">
-                <i class="fa fa-chevron-left"></i> USACO 2019 JAN Platinum 3 -- Train Tracking 2
+              <a href="/2021/10/05/博客新生企划/" rel="next" title="博客新生企划">
+                <i class="fa fa-chevron-left"></i> 博客新生企划
               </a>
             
           </div>
@@ -552,10 +531,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/10/LG-1659/" rel="prev" title="LG 1659 -- 拉拉队排练">
-                LG 1659 -- 拉拉队排练 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -760,7 +735,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题面"><span class="nav-number">2.</span> <span class="nav-text">题面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解"><span class="nav-number">3.</span> <span class="nav-text">解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Code"><span class="nav-number">4.</span> <span class="nav-text">Code</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题面"><span class="nav-number">2.</span> <span class="nav-text">题面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解"><span class="nav-number">3.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
             
 
           </div>
