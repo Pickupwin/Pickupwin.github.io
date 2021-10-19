@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="摘要求给出的字符串 $S$ 中 nunhehhehaaa... 子序列的个数 恶臭题目；随意DP一下">
-<meta name="keywords" content=".HDU,定位">
+  <meta name="description" content="摘要给出一些二维点，求 $x$ 长最短的区间，满足该区间内点 $y$ 坐标极差 $\ge D$ 不太一样的滑动窗口题目。">
+<meta name="keywords" content=".LG,滑动窗口">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HDU 7131 Nun Heh Heh Aaaaaaaaaaa">
-<meta property="og:url" content="http://yoursite.com/2021/10/13/HDU-7131/index.html">
+<meta property="og:title" content="洛谷 2698 Flowerpot">
+<meta property="og:url" content="http://yoursite.com/2021/10/20/LG-2698/index.html">
 <meta property="og:site_name" content="Pickupwin">
-<meta property="og:description" content="摘要求给出的字符串 $S$ 中 nunhehhehaaa... 子序列的个数 恶臭题目；随意DP一下">
+<meta property="og:description" content="摘要给出一些二维点，求 $x$ 长最短的区间，满足该区间内点 $y$ 坐标极差 $\ge D$ 不太一样的滑动窗口题目。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-10-13T15:50:18.377Z">
+<meta property="og:updated_time" content="2021-10-19T17:50:13.875Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HDU 7131 Nun Heh Heh Aaaaaaaaaaa">
-<meta name="twitter:description" content="摘要求给出的字符串 $S$ 中 nunhehhehaaa... 子序列的个数 恶臭题目；随意DP一下">
+<meta name="twitter:title" content="洛谷 2698 Flowerpot">
+<meta name="twitter:description" content="摘要给出一些二维点，求 $x$ 长最短的区间，满足该区间内点 $y$ 坐标极差 $\ge D$ 不太一样的滑动窗口题目。">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2021/10/13/HDU-7131/">
+  <link rel="canonical" href="http://yoursite.com/2021/10/20/LG-2698/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>HDU 7131 Nun Heh Heh Aaaaaaaaaaa | Pickupwin</title>
+  <title>洛谷 2698 Flowerpot | Pickupwin</title>
   
 
 
@@ -358,7 +358,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/10/13/HDU-7131/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/10/20/LG-2698/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Bowen Su">
@@ -375,7 +375,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">HDU 7131 Nun Heh Heh Aaaaaaaaaaa
+          <h1 class="post-title" itemprop="name headline">洛谷 2698 Flowerpot
 
               
             
@@ -401,7 +401,7 @@
                 
               
 
-              <time title="创建时间：2021-10-13 23:38:36 / 修改时间：23:50:18" itemprop="dateCreated datePublished" datetime="2021-10-13T23:38:36+08:00">2021-10-13</time>
+              <time title="创建时间：2021-10-20 01:34:20 / 修改时间：01:50:13" itemprop="dateCreated datePublished" datetime="2021-10-20T01:34:20+08:00">2021-10-20</time>
             
 
             
@@ -423,7 +423,14 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/动态规划/" itemprop="url" rel="index"><span itemprop="name">动态规划</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据结构/单调队列/" itemprop="url" rel="index"><span itemprop="name">单调队列</span></a></span>
 
                 
                 
@@ -442,8 +449,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2021/10/13/HDU-7131/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/13/HDU-7131/" itemprop="commentCount"></span>
+                <a href="/2021/10/20/LG-2698/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/10/20/LG-2698/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -471,15 +478,16 @@
       
 
       
-        <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>求给出的字符串 $S$ 中 <code>nunhehhehaaa...</code> 子序列的个数</p>
-<p>恶臭题目；随意DP一下</p>
+        <h3 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h3><p>给出一些二维点，求 $x$ 长最短的区间，满足该区间内点 $y$ 坐标极差 $\ge D$</p>
+<p>不太一样的滑动窗口题目。</p>
 <a id="more"></a>
-<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://acm.dingbacode.com/showproblem.php?pid=7131" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p>计数DP？</p>
-<p>直接的想法就是统计每个位置左侧 <code>nunhehheh</code> 的个数和右侧 <code>a</code> 的个数。</p>
-<p>但是要避免算重，对串<code>nunhehhehaaa...</code>定位一下，约定在第一个 <code>a</code> 处计数。</p>
-<p>如何统计左侧 <code>nunhehheh</code> 个数？DP，$F[i][k]$ 表示 $S[1\cdots i]$ 包含多少个目标串的 $k$ 长前缀</p>
-<p>$F[i][k]=F[i-1][k]+[S[i]==Aim[k]]*F[i-1][k-1]$</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//https://acm.dingbacode.com/showproblem.php?pid=7131</span></span><br><span class="line"><span class="comment">//2021-10-13 nksbwen</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXL=<span class="number">100111</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MOD=<span class="number">998244353</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;a, <span class="keyword">const</span> <span class="keyword">int</span> &amp;b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> a+b-((a+b&gt;=MOD)?MOD:<span class="number">0</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">mul</span><span class="params">(<span class="keyword">const</span> <span class="keyword">int</span> &amp;a, <span class="keyword">const</span> <span class="keyword">int</span> &amp;b)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1L</span>L*a*b%MOD;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">pow</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> r=<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(k)&#123;</span><br><span class="line">		<span class="keyword">if</span>(k&amp;<span class="number">1</span>)	r=mul(r, a);</span><br><span class="line">		a=mul(a, a);k&gt;&gt;=<span class="number">1</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> T;</span><br><span class="line"><span class="keyword">char</span> Aim[<span class="number">10</span>]=<span class="string">"nunhehheh"</span>;</span><br><span class="line"><span class="keyword">char</span> input[MAXL];</span><br><span class="line"><span class="keyword">int</span> len;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> CntA[MAXL];</span><br><span class="line"><span class="keyword">int</span> DP[MAXL][<span class="number">10</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">while</span>(T--)&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%s"</span>, input);</span><br><span class="line">		len=<span class="built_in">strlen</span>(input);</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=len;++i)	<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;<span class="number">10</span>;++j)	DP[i][j]=<span class="number">0</span>;</span><br><span class="line">		DP[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;++i)&#123;</span><br><span class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;=<span class="number">9</span>;++j)&#123;</span><br><span class="line">				DP[i+<span class="number">1</span>][j]=sum(DP[i][j], DP[i+<span class="number">1</span>][j]);</span><br><span class="line">				<span class="keyword">if</span>(Aim[j]==input[i])&#123;</span><br><span class="line">					DP[i+<span class="number">1</span>][j+<span class="number">1</span>]=sum(DP[i][j], DP[i+<span class="number">1</span>][j+<span class="number">1</span>]);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		CntA[len]=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=len;i&gt;<span class="number">0</span>;--i)	CntA[i<span class="number">-1</span>]=CntA[i]+(input[i<span class="number">-1</span>]==<span class="string">'a'</span>);</span><br><span class="line">		<span class="keyword">int</span> Ans=<span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;++i)&#123;</span><br><span class="line">			<span class="keyword">if</span>(CntA[i]!=CntA[i+<span class="number">1</span>])&#123;</span><br><span class="line">				Ans=sum(Ans, mul(DP[i][<span class="number">9</span>], <span class="built_in">pow</span>(<span class="number">2</span>, CntA[i+<span class="number">1</span>])));</span><br><span class="line">				<span class="comment">// printf("%d %d %d \n", i, DP[i][9], CntA[i+1]);</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, Ans);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>[USACO 2012 MAR SILVER] Flowerpot</p>
+<h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a><a href="https://www.luogu.com.cn/problem/P2698" target="_blank" rel="noopener">题面</a></h3><h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><p><del>滑动窗口</del> 双指针</p>
+<p>窗口保持极差 $\ge D$ ，需要支持出队、入队、求极差</p>
+<p>用两个单调队列维护最大最小值。</p>
+<p>（这种单调性相反的队列中的元素是不交的（除队尾），不清楚这个性质有什么用处）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//https://www.luogu.com.cn/problem/P2698</span></span><br><span class="line"><span class="comment">//2021 10 20 AliCCC</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF=<span class="number">1034567890</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">100111</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> N, D;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Pos</span>&#123;</span></span><br><span class="line">	<span class="keyword">int</span> x, y;</span><br><span class="line">&#125; P[MAXN];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">cmpx</span><span class="params">(<span class="keyword">const</span> Pos &amp;A, <span class="keyword">const</span> Pos &amp;B)</span></span>&#123;</span><br><span class="line">	<span class="keyword">return</span> A.x&lt;B.x;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Mx[MAXN], Mxh, Mxt;</span><br><span class="line"><span class="keyword">int</span> Mn[MAXN], Mnh, Mnt;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;N, &amp;D);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=N;++i)&#123;</span><br><span class="line">		<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;P[i].x, &amp;P[i].y);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	sort(P+<span class="number">1</span>, P+N+<span class="number">1</span>, cmpx);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">int</span> Ans=INF;</span><br><span class="line">    <span class="comment">//int Ans=N+1;</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>, j=<span class="number">1</span>;i&lt;=N;++i)&#123;</span><br><span class="line">		<span class="keyword">while</span>(j&lt;=N &amp;&amp; P[Mx[Mxh]].y-P[Mn[Mnh]].y&lt;D)&#123;</span><br><span class="line">			<span class="keyword">while</span>(Mxh&lt;Mxt &amp;&amp; P[Mx[Mxt<span class="number">-1</span>]].y&lt;=P[j].y)	--Mxt;</span><br><span class="line">			Mx[Mxt++]=j;</span><br><span class="line">			<span class="keyword">while</span>(Mnh&lt;Mnt &amp;&amp; P[Mn[Mnt<span class="number">-1</span>]].y&gt;=P[j].y)	--Mnt;</span><br><span class="line">			Mn[Mnt++]=j;</span><br><span class="line">			++j;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(P[Mx[Mxh]].y-P[Mn[Mnh]].y&gt;=D)	Ans=min(Ans, <span class="built_in">abs</span>(P[j<span class="number">-1</span>].x-P[i].x));	<span class="comment">//Ans=min(Ans, j-i);</span></span><br><span class="line">		<span class="keyword">if</span>(Mx[Mxh]==i)	++Mxh;</span><br><span class="line">		<span class="keyword">if</span>(Mn[Mnh]==i)	++Mnh;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>, (Ans&gt;=INF)?<span class="number">-1</span>:Ans);</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -503,9 +511,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/HDU/" rel="tag"># .HDU</a>
+            <a href="/tags/LG/" rel="tag"># .LG</a>
           
-            <a href="/tags/定位/" rel="tag"># 定位</a>
+            <a href="/tags/滑动窗口/" rel="tag"># 滑动窗口</a>
           
         </div>
       
@@ -518,8 +526,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/10/12/BZOJ-1691/" rel="next" title="BZOJ 1691 挑剔的美食家">
-                <i class="fa fa-chevron-left"></i> BZOJ 1691 挑剔的美食家
+              <a href="/2021/10/20/HDU-5965/" rel="next" title="HDU 5965 扫雷">
+                <i class="fa fa-chevron-left"></i> HDU 5965 扫雷
               </a>
             
           </div>
@@ -527,10 +535,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2021/10/14/HDU-7105/" rel="prev" title="HDU 7105 Power Sum">
-                HDU 7105 Power Sum <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -757,7 +761,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题面"><span class="nav-number">2.</span> <span class="nav-text">题面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解"><span class="nav-number">3.</span> <span class="nav-text">题解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#摘要"><span class="nav-number">1.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题面"><span class="nav-number">2.</span> <span class="nav-text">题面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解"><span class="nav-number">3.</span> <span class="nav-text">题解</span></a></li></ol></div>
             
 
           </div>
@@ -959,46 +963,6 @@
   
   
 
-  
-    
-      <script type="text/x-mathjax-config">
-  
-
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
-      processEscapes: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    },
-    TeX: {
-      
-      equationNumbers: {
-        autoNumber: 'AMS'
-      }
-    }
-  });
-  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
-    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
-      if (data.display) {
-        var next = data.script.nextSibling;
-        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
-        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
-      }
-    });
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for (i = 0; i < all.length; i += 1) {
-      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
-    }
-  });
-</script>
-<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    
   
 
 
